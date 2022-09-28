@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node ./dist/server.js",
-    "start:dev": "ts-node-dev ./src/server.ts",
+    "run": "yarn build && node ./dist/server.js",
+    "run:dev": "ts-node-dev ./src/server.ts",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
     "test": "jest --projects ./test --runInBand"
@@ -27,6 +27,7 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
